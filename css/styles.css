@@ -771,7 +771,7 @@ outline: 2px solid var(--accent-color);
     background-color: var(--accent-color);
 }
 
-.sn-link{
+.teambottom-list__link{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -785,34 +785,34 @@ outline: 2px solid var(--accent-color);
             fill 250ms var(--tran-hover);
 }
 
-.sn-link:hover,
-.sn-link:focus {
+.teambottom-list__link:hover,
+.teambottom-list__link:focus {
     fill: var(--neutral-color);
     background-color: var(--accent-color);
 }
 
 
-.sn-link:hover .sn-icon,
-.sn-link:focus .sn-icon {
+.teambottom-list__link:hover .teambottom-list__icon,
+.teambottom-list__link:focus .teambottom-list__icon {
     fill: var(--neutral-color);
 }
 
-.sn-item:not(:last-child) {
+.teambottom-list__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.sn-item{
+.teambottom-list__item{
     background-color: var(--footer-white);
     border-radius: 50%;
     transition: background-color 250ms var(--tran-hover);
 }
 
-.sn-item:hover,
-.sn-item:focus{
+.teambottom-list__item:hover,
+.teambottom-list__item:focus{
     background-color: var(--accent-color);
 }
 
-.sn-icon{
+.teambottom-list__icon{
     fill: var(--icons);
     transition: fill 250ms var(--tran-hover);
 }
