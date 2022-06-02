@@ -707,15 +707,17 @@ outline: 2px solid var(--accent-color);
     background-color: var(--bgc-psel);
 }
 
-/**************************** Team */
+/**************************** Team-section */
 
 .team-list{
     display: flex;
 }
+
 .team-list__item{
     margin-right: 30px;
     background-color: var(--neutral-color);
 }
+
 .team-list__item:last-child{
     margin-right: 0;
 }
@@ -732,22 +734,20 @@ outline: 2px solid var(--accent-color);
     text-align: center;
     margin-bottom: 50px;
 }
+
 .teambottom__title{
     color: var(--title-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     margin-bottom: 10px;
-
-    
-   
 }
+
 .teambottom__text{
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.19;
-    margin-bottom: 16px;
-    
+    margin-bottom: 16px; 
 }
 
 .teambottom-container{
@@ -756,7 +756,6 @@ outline: 2px solid var(--accent-color);
     padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
 }
 
 .teambottom-list{
@@ -764,11 +763,6 @@ outline: 2px solid var(--accent-color);
     justify-content: center;
     align-items: center;
     transition: background-color 250ms var(--tran-hover);
-}
-
-.cn-link:hover,
-.cn-link:focus{
-    background-color: var(--accent-color);
 }
 
 .teambottom-list__link{
@@ -790,7 +784,6 @@ outline: 2px solid var(--accent-color);
     fill: var(--neutral-color);
     background-color: var(--accent-color);
 }
-
 
 .teambottom-list__link:hover .teambottom-list__icon,
 .teambottom-list__link:focus .teambottom-list__icon {
@@ -818,9 +811,9 @@ outline: 2px solid var(--accent-color);
 }
 
 
-/************************ clients */
+/************************ clients-section*/
 
-.clients-title{
+.clients-section__title{
     color: var(--title-color);
     font-weight: 700;
     font-size: 36px;
@@ -834,22 +827,22 @@ outline: 2px solid var(--accent-color);
     justify-content: center;
 }
 
-.clients-item {
+.clients-list__item {
     border: 1px solid var(--icons);
     border-radius: 4px;
     transition: border-color 250ms var(--tran-hover);
 }
 
-.clients-item:hover,
-.clients-item:focus{
+.clients-list__item:hover,
+.clients-list__item:focus{
     border-color: var(--accent-color);
 }
 
-.clients-item:not(:last-child){
+.clients-list__item:not(:last-child){
     margin-right: 30px;
 }
 
-.clients-link{
+.clients-list__link{
     display: flex;
     width: 170px;
     height: 92px;
@@ -859,17 +852,17 @@ outline: 2px solid var(--accent-color);
 }
 
 
-.clients-icon{
+.clients-list__icon{
     fill: var(--icons);
     transition: fill 250ms var(--tran-hover);
 }
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.clients-list__link:hover .clients-list__icon,
+.clients-list__link:focus .clients-list__icon {
     fill: var(--accent-color);
 } 
 
-.clients-icon:active{
+.clients-list__icon:active{
     fill:var(--logo-color);
 }
 
