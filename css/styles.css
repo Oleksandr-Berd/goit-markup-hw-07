@@ -447,7 +447,7 @@ position: absolute;
     border: 1px solid var(--border-modal);
     outline: transparent;
     cursor: pointer;
-    transition: outline 250ms var(--tran-hover);
+    transition: border-color 250ms var(--tran-hover);
 }
 
 .form-modal-input:hover,
@@ -484,6 +484,10 @@ position: absolute;
     opacity: 1;
 }
 
+.form-modal-group:hover .form-modal-icon,
+.form-modal-input:focus-within .form-modal-icon{
+    fill: var(--accent-color);
+}
 
 .form-modal-input:not(:placeholder-shown)~.warning {
     opacity: 0;
@@ -493,15 +497,15 @@ position: absolute;
     position: absolute;
     bottom: 11px;
     left: 12px;
-    fill: var(--logo-color);
+    /* fill: var(--logo-color); */
     transition: fill 250ms var(--tran-hover);
+    cursor: pointer;
 }
 
-.form-modal-input:focus ~ .form-modal-icon,
+/* .form-modal-input:focus ~ .form-modal-icon,
 .form-modal-input:hover ~ .form-modal-icon{
-    color: var(--accent-color);
     fill: var(--accent-color);
-}
+} */
 
 
 .error{
@@ -655,7 +659,7 @@ outline: 2px solid var(--accent-color);
         border-radius: 4px;
         box-shadow: none;
         transition: background-color 250ms var(--tran-hover),
-        bos-shadow 250ms var(--tran-hover);
+        box-shadow 250ms var(--tran-hover);
         }
 
         .submit-button:hover,
