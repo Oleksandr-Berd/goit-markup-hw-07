@@ -149,13 +149,15 @@ img{
  .accent {
     color: var(--logo-color);
 }
-
+/* navigation-list */
 .navigation-list{
     display: flex;
     margin-left: 93px;
 }
 
-.navigation-list .link{
+.navigation-list__link{
+    position: relative;
+
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--title-color);
@@ -165,17 +167,13 @@ img{
     transition: color 250ms var(--tran-hover);
 }
 
-.navigation-list .link.current{
+.navigation-list__link--current{
     color: var(--accent-color);
     transition: background-color 250ms var(--tran-hover);
 }
 
-.nav-link{
-    position: relative;
-}
-
-.navigation-list .link:hover,
-.navigation-list .link:focus,
+.navigation-list__link:hover,
+.navigation-list__link:focus,
 .adress:hover,
 .adress:focus,
 .footer-cn .link:hover,
@@ -183,7 +181,7 @@ img{
 color: var(--accent-color);
 }
 
-.current:after{
+.navigation-list__link--current:after{
 position: absolute;
     bottom: 0;
     left: 0;
@@ -195,20 +193,16 @@ position: absolute;
     background-color: var(--accent-color);
 }
 
-.current:hover::after,
-.current:focus::after {
+.navigation-list__link--current:hover::after,
+.navigation-list__link--current:focus::after {
     transform: scale(0.5);
     transition: transform 500ms var(--tran-hover);
 }
 
-.navigation-list .list:last-child{
+.navigation-list:last-child{
     margin-right: 0;
 }
 
-.nav-adress{
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 
 .contact-nav{
     padding-bottom: 32px;
@@ -225,10 +219,10 @@ position: absolute;
 }
 
 
-.item-header{
+.navigation-list__item{
     margin-right: 50px;
 }
-.item-header:last-child{
+.naavigation-list__item:last-child{
     margin-right: 0;
 }
 
