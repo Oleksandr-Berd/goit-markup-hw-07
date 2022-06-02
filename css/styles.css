@@ -665,16 +665,7 @@ outline: 2px solid var(--accent-color);
 
 /**************************** Services-section */
 
-.sec-services{
-    padding-top: 0;
-}
-
-.sec-services .title-services{
-    color: var(--title-color);
-}
-
-
-.title-services {
+.service-section__title {
     margin-bottom: 50px;
     margin-top: 0;
     font-weight: 700;
@@ -684,19 +675,19 @@ outline: 2px solid var(--accent-color);
     
 }
 
-.services-list{
+.service-list{
     display: flex;
 }
-.service-item{
+.service-list__item{
     position: relative;
     margin-right: 30px;
 }
 
-.service-item:last-child{
+.service-list__item:last-child{
     margin-right: 0;
 }
 
-.service-text{
+.service-list__text{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -714,10 +705,10 @@ outline: 2px solid var(--accent-color);
     height: 70px;
 
     background-color: var(--bgc-psel);
-
 }
 
 /**************************** Team */
+
 .team-list{
     display: flex;
 }
